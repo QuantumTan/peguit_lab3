@@ -15,8 +15,10 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final initial =
-        user.name.isNotEmpty ? user.name[0].toUpperCase() : 'U';
+    final parts = user.name.trim().split(RegExp(r'\s+'));
+    final initial = parts.length > 1 && parts.first.isNotEmpty && parts.last.isNotEmpty
+        ? '${parts.first[0]}${parts.last[0]}'.toUpperCase()
+        : (user.name.isNotEmpty ? user.name[0].toUpperCase() : 'U');
 
     return Scaffold(
       appBar: AppBar(
@@ -151,7 +153,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
                   const Text(
-                    '${AppConstants.appName} • BSIT 3A',
+                    '${AppConstants.appName} • BSIT 3rd Year',
                     style: TextStyle(
                       fontSize: 12,
                       color: Color(0xFF94A3B8),

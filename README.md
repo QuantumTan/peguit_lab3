@@ -14,7 +14,7 @@ This Flutter application implements a complete in-memory authentication workflow
 ### Requirements Implemented
 - [x] **Custom Theme Color:** Modern Teal primary color (`#0D9488`) with Slate canvas background (`#F8FAFC`).
 - [x] **Application Name Above Form:** Prominent circular lock badge and `Peguit Auth System` branding.
-- [x] **Student Name & Year Below Form:** Dedicated `Jonathan Jr Peguit | BSIT #rd Year` credential badge.
+- [x] **Student Name & Year Below Form:** Dedicated `Jonathan Jr H Peguit | BSIT 3rd Year` credential badge.
 - [x] **8-Character Minimum Password Validation:** Enforces $\ge 8$ characters with validation message `"Use at least 8 characters."` and live progress counter `At least 8 characters (x/8)`.
 - [x] **Interactive Auth Flow:** Functional registration, credential validation, login, welcome screen, and logout.
 - [x] **Modular Architecture:** Clean file structure separating core theme/constants, models, screens, and reusable widgets.

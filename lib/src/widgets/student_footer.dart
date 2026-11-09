@@ -28,14 +28,16 @@ class StudentFooter extends StatelessWidget {
             color: Color(0xFF64748B),
           ),
           SizedBox(width: 8),
-          Text(
-            AppConstants.studentNameAndSection,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 13,
-              fontWeight: FontWeight.w600,
-              color: Color(0xFF475569),
-              letterSpacing: 0.2,
+          Flexible(
+            child: Text(
+              AppConstants.studentNameAndSection,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 13,
+                fontWeight: FontWeight.w600,
+                color: Color(0xFF475569),
+                letterSpacing: 0.2,
+              ),
             ),
           ),
         ],
